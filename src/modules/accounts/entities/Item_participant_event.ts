@@ -5,14 +5,11 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 
-@Entity('tb_cities')
-export class City {
+@Entity('item_participant_events')
+export class Item_participant_event {
   @PrimaryGeneratedColumn()
-  id_city: number;
-
-  @Column({ type: 'varchar', length: 100, nullable: false })
-  nm_city: string;
+  id_participant: number;
 
   @Column({ type: 'int', nullable: false })
-  id_state: number;
+  id_event: number;
 }
